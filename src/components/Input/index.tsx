@@ -22,7 +22,7 @@ interface InputRef {
 	focus(): void;
 }
 
-const Input: React.ForwardRefRenderFunction<InputRef, InputProps> = (
+const Input: React.RefForwardingComponent<InputRef, InputProps> = (
 	{ name, icon, ...rest },
 	ref,
 ) => {
